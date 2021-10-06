@@ -4,4 +4,4 @@
 
 It is a WPF remake of the application!
 
-<p><img src="https://i.imgur.com/F5Z9noW.png" alt="Logo"></p>
+<p><img src="https://i.imgur.com/h1yHNmu.png" alt="Logo"></p>
