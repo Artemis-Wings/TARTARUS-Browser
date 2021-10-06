@@ -57,8 +57,14 @@ namespace TARTARUS
         { 
             if(!string.IsNullOrWhiteSpace(AddressBox.Text))
             {
-                Browser.Address = AddressBox.Text;
+                Browser.Load(AddressBox.Text);
             }
+        }
+
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            AddressBox.Text = "www.google.com";
+            Browser.Address = "www.google.com";
         }
     }
 }

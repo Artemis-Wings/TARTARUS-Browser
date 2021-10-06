@@ -27,11 +27,10 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="TARTARUS"
+            <Image Source="Assets/tartarus_banner.png"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
-                       Foreground="White"
-                       FontSize="29" Grid.Column="1"/>
+                       Grid.Column="1"/>
 
 
 
@@ -43,8 +42,9 @@
             </ContentControl>
 
             <Button Click="BackBtn_Click" Content="←" Name="BackBtn" Width="40px" Height="30px" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,0"></Button>
-            <Button Click="ForwardBtn_Click" Content="→" Name="ForwartBtn" Grid.Column="2" Width="40px" Height="30px" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="55,0,0,0"></Button>
+            <Button Click="ForwardBtn_Click" Content="→" Name="ForwartBtn" Grid.Column="2" Width="40px" Height="30px" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="55,22,0,23"></Button>
             <Button Name="Navigate" Click="Navigate_Click" Content="Search!" Grid.Column="2" Width="64" Height="30px" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="625,0,0,0"></Button>
+            <Button Name="HomeBtn" Content="Home" Click="Home_Click" Grid.Column="2" Width="52" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="100,22,0,23"/>
 
 
             <TextBox Width="469"
