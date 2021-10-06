@@ -66,5 +66,9 @@ namespace TARTARUS
             AddressBox.Text = "www.google.com";
             Browser.Address = "www.google.com";
         }
+        private void Reload_Click(object sender, RoutedEventArgs e)
+        {
+            Browser.Reload(true);
+        }
     }
 }

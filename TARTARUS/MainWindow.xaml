@@ -18,6 +18,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="7.5"/>
                 <ColumnDefinition Width="192.5"/>
+
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
@@ -41,17 +42,18 @@
 
             </ContentControl>
 
-            <Button Click="BackBtn_Click" Content="←" Name="BackBtn" Width="40px" Height="30px" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,0"></Button>
-            <Button Click="ForwardBtn_Click" Content="→" Name="ForwartBtn" Grid.Column="2" Width="40px" Height="30px" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="55,22,0,23"></Button>
-            <Button Name="Navigate" Click="Navigate_Click" Content="Search!" Grid.Column="2" Width="64" Height="30px" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="625,0,0,0"></Button>
-            <Button Name="HomeBtn" Content="Home" Click="Home_Click" Grid.Column="2" Width="52" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="100,22,0,23"/>
+            <Button Click="BackBtn_Click" Content="←" Name="BackBtn" Width="40px" Height="30px" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" Grid.Column="2" HorizontalAlignment="Left" Margin="15,22,0,23"></Button>
+            <Button Click="ForwardBtn_Click" Content="→" Name="ForwartBtn" Grid.Column="2" Width="39" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="60,22,0,23"/>
+            <Button Name="Navigate" Click="Navigate_Click" Content="Search!" Grid.Column="2" Width="64" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="638,21,0,23"/>
+            <Button Name="HomeBtn" Content="⌂" Click="Home_Click" Grid.Column="2" Width="32" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="137,22,0,23"/>
+            <Button Name="ReloadBtn" Content="⟳" Click="Reload_Click" HorizontalAlignment="Left" Margin="104,0,0,0" VerticalAlignment="Center" Height="30" Width="28" Grid.Column="2"/>
 
 
             <TextBox Width="469"
                        Height="40"
                        VerticalContentAlignment="Center"
                        HorizontalAlignment="Left"
-                       Margin="146,16,0,19"
+                       Margin="170,16,0,19"
                      Grid.Column="2"
                      Name="AddressBox"
                      Style="{StaticResource ModernTextBox}" RenderTransformOrigin="0.5,0.5">
