@@ -30,9 +30,9 @@ namespace TARTARUS
         {
             Dispatcher.BeginInvoke((Action)(() => 
             {
+                Navigate.IsEnabled = !string.IsNullOrWhiteSpace(AddressBox.Text);
                 AddressBox.Text = e.Url;
                 BackBtn.IsEnabled = Browser.CanGoBack;
-                Navigate.IsEnabled = !string.IsNullOrWhiteSpace(AddressBox.Text);
                 ForwartBtn.IsEnabled = Browser.CanGoForward;
             }));
         }
@@ -69,6 +69,12 @@ namespace TARTARUS
         private void Reload_Click(object sender, RoutedEventArgs e)
         {
             Browser.Reload(true);
+        }
+
+        private void Logo_Click(object sender, RoutedEventArgs e)
+        {
+            AddressBox.Text = "";
+            Browser.Address = "https://artemis-wings.github.io/Styx/";
         }
     }
 }

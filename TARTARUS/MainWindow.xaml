@@ -28,11 +28,32 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Image Source="Assets/tartarus_banner.png"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       Grid.Column="1"/>
 
+
+            <Button Grid.Column="1" Click="Logo_Click" Margin="16,10,10,10">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <StackPanel Width="{TemplateBinding Width}" Height="{TemplateBinding Width}" x:Name="panel">
+                                        <ContentPresenter Width="{TemplateBinding Width}" Height="{TemplateBinding Width}" />
+                                    </StackPanel>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsPressed" Value="true">
+                                            <Setter Property="Background" Value="Transparent" TargetName="panel" />
+                                        </Trigger>
+                                        <Trigger Property="IsMouseOver" Value="true">
+                                            <Setter Property="Background" Value="Transparent" />
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+                <Image Width="162" Source="Assets\tartarus_banner.png" Grid.Column="1" Height="53"/>
+            </Button>
 
 
             <ContentControl Grid.Row="1"
@@ -42,18 +63,18 @@
 
             </ContentControl>
 
-            <Button Click="BackBtn_Click" Content="←" Name="BackBtn" Width="40px" Height="30px" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" Grid.Column="2" HorizontalAlignment="Left" Margin="15,22,0,23"></Button>
-            <Button Click="ForwardBtn_Click" Content="→" Name="ForwartBtn" Grid.Column="2" Width="39" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="60,22,0,23"/>
+            <Button Click="BackBtn_Click" Content="←" Name="BackBtn" Width="40px" Height="30px" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" Grid.Column="2" HorizontalAlignment="Left" Margin="0,22,0,23"></Button>
+            <Button Click="ForwardBtn_Click" Content="→" Name="ForwartBtn" Grid.Column="2" Width="39" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="40,22,0,23"/>
             <Button Name="Navigate" Click="Navigate_Click" Content="Search!" Grid.Column="2" Width="64" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="638,21,0,23"/>
-            <Button Name="HomeBtn" Content="⌂" Click="Home_Click" Grid.Column="2" Width="32" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="137,22,0,23"/>
-            <Button Name="ReloadBtn" Content="⟳" Click="Reload_Click" HorizontalAlignment="Left" Margin="104,0,0,0" VerticalAlignment="Center" Height="30" Width="28" Grid.Column="2"/>
+            <Button Name="HomeBtn" Content="⌂" Click="Home_Click" Grid.Column="2" Width="32" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="119,22,0,23"/>
+            <Button Name="ReloadBtn" Content="⟳" Width="40px" Height="30px" Click="Reload_Click" HorizontalAlignment="Left" Background="LightGray" Margin="79,22,0,0" VerticalAlignment="Top" BorderThickness="0" Grid.Column="2"/>
 
 
             <TextBox Width="469"
                        Height="40"
                        VerticalContentAlignment="Center"
                        HorizontalAlignment="Left"
-                       Margin="170,16,0,19"
+                       Margin="149,16,0,19"
                      Grid.Column="2"
                      Name="AddressBox"
                      Style="{StaticResource ModernTextBox}" RenderTransformOrigin="0.5,0.5">
