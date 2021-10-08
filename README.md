@@ -4,4 +4,6 @@
 
 It is a WPF remake of the application!
 
+(Using the ChromiumWebBrowser)
+
 <p><img src="https://i.imgur.com/h1yHNmu.png" alt="Logo"></p>
