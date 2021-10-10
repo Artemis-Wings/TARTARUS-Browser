@@ -30,8 +30,6 @@ namespace TARTARUS
         {
             Dispatcher.BeginInvoke((Action)(() => 
             {
-                Navigate.IsEnabled = !string.IsNullOrWhiteSpace(AddressBox.Text);
-                AddressBox.Text = e.Url;
                 BackBtn.IsEnabled = Browser.CanGoBack;
                 ForwartBtn.IsEnabled = Browser.CanGoForward;
             }));
@@ -53,17 +51,9 @@ namespace TARTARUS
 
 
         }
-        private void Navigate_Click(object sender, RoutedEventArgs e) 
-        { 
-            if(!string.IsNullOrWhiteSpace(AddressBox.Text))
-            {
-                Browser.Load(AddressBox.Text);
-            }
-        }
 
         private void Home_Click(object sender, RoutedEventArgs e)
         {
-            AddressBox.Text = "www.google.com";
             Browser.Address = "www.google.com";
         }
         private void Reload_Click(object sender, RoutedEventArgs e)
@@ -73,8 +63,7 @@ namespace TARTARUS
 
         private void Logo_Click(object sender, RoutedEventArgs e)
         {
-            AddressBox.Text = "";
-            Browser.Address = "https://artemis-wings.github.io/Styx/";
+            Browser.Address = "https://artemis-wings.github.io/Tartarus/";
         }
     }
 }
