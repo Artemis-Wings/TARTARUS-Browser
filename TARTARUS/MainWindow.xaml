@@ -12,7 +12,6 @@
         >
 
 
-
     <Border Background="#272537">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -63,16 +62,15 @@
 
             </ContentControl>
 
-            <Button Click="BackBtn_Click" Content="←" Name="BackBtn" Width="40px" Height="30px" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" Grid.Column="2" HorizontalAlignment="Left" Margin="23,22,0,23"></Button>
-            <Button Click="ForwardBtn_Click" Content="→" Name="ForwartBtn" Grid.Column="2" Width="39" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="106,22,0,23"/>
-            <Button Name="HomeBtn" Content="⌂" Click="Home_Click" Grid.Column="2" Width="32" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="376,22,0,23"/>
-            <Button Name="ReloadBtn" Content="⟳" Width="40px" Height="30px" Click="Reload_Click" HorizontalAlignment="Left" Background="LightGray" Margin="220,0,0,0" VerticalAlignment="Center" BorderThickness="0" Grid.Column="2"/>
+            <Button Click="BackBtn_Click" Style="{StaticResource BackBtnTheme}" Content="←" Name="BackBtn" Width="40px" Height="30px" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" Grid.Column="2" HorizontalAlignment="Left" Margin="23,22,0,23"/>
+            <Button Click="ForwardBtn_Click" Style="{StaticResource ForwardBtnTheme}" Content="→" Name="ForwartBtn" Grid.Column="2" Width="42" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="68,22,0,23"/>
+            <Button Name="HomeBtn" Content="⌂" Style="{StaticResource HomeBtnTheme}" Click="Home_Click" Grid.Column="2" Width="44" BorderThickness="0" Background="LightGray" Foreground="Black" FontSize="18" HorizontalAlignment="Left" Margin="171,10,0,23"/>
+            <Button Name="ReloadBtn" Content="⟳" Style="{StaticResource ReloadBtnTheme}" Width="40px" Height="30px" Click="Reload_Click" HorizontalAlignment="Left" Background="LightGray" Margin="126,0,0,0" VerticalAlignment="Center" BorderThickness="0" Grid.Column="2"/>
 
 
 
         </Grid>
     </Border>
-
 
 
 </Window>

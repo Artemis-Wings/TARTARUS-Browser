@@ -9,7 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\arrow_left.png" />
+    <None Remove="Assets\arrow_right.png" />
+    <None Remove="Assets\HomeBtn.png" />
+    <None Remove="Assets\reloadbtn.png" />
     <None Remove="Assets\tartarus_banner.png" />
+    <None Remove="Themes\arrow_left.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,9 +22,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Assets\arrow_left.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\arrow_right.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\HomeBtn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\reloadbtn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\tartarus_banner.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Themes\arrow_left.png" />
   </ItemGroup>
 
 </Project>

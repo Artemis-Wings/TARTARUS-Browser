@@ -7,6 +7,10 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Themes/TextBoxTheme.xaml"/>
+                <ResourceDictionary Source="Themes/ButtonReloadTheme.xaml"/>
+                <ResourceDictionary Source="Themes/ButtonHomeTheme.xaml"/>
+                <ResourceDictionary Source="Themes/ButtonForwardTheme.xaml"/>
+                <ResourceDictionary Source="Themes/ButtonBackTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
