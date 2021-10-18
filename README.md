@@ -6,4 +6,6 @@ It is a WPF remake of the application!
 
 (Using the ChromiumWebBrowser)
 
+<p><a href="https://artemis-wings.github.io/Tartarus"</a>Our Website!</p>
+
 <p><img src="https://i.imgur.com/h1yHNmu.png" alt="Logo"></p>
